@@ -4,6 +4,7 @@ export let products = [
     img: "https://res.cloudinary.com/dphzc4d5r/image/upload/v1696376668/3_ttppjx.jpg",
     descripcion: "Reloj Batman calado artesanal",
     stock: 4,
+category: "relojes",
     precio: 3000,
   },
   {
@@ -11,6 +12,7 @@ export let products = [
     img: "https://res.cloudinary.com/dphzc4d5r/image/upload/v1696376614/1_x8hkab.jpg",
     descripcion: "Tapizado estrella rojo",
     stock: 3,
+category: "decoracion",
     precio: 6000,
   },
   {
@@ -18,6 +20,7 @@ export let products = [
     img: "https://res.cloudinary.com/dphzc4d5r/image/upload/v1696376644/8_diuzz5.jpg",
     descripcion: "Tapizado en hilo amarillo",
     stock: 5,
+category: "decoracion",
     precio: 6000,
   },
   {
@@ -25,6 +28,7 @@ export let products = [
     img: "https://res.cloudinary.com/dphzc4d5r/image/upload/v1696376547/hiloalmohadon_ackmxm.png",
     descripcion: "Funda macramé para almohadón",
     stock: 5,
+category: "decoracion",
     precio: 4000,
   },
   {
@@ -32,6 +36,7 @@ export let products = [
     img: "https://res.cloudinary.com/dphzc4d5r/image/upload/v1696376589/decotrenzado_midp3a.jpg",
     descripcion: "Tapiz decotativo macramé hojas",
     stock: 8,
+category: "decoracion",
     precio: 7000,
   },
   {
@@ -39,6 +44,7 @@ export let products = [
     img: "https://res.cloudinary.com/dphzc4d5r/image/upload/v1696376565/elefante_reloj_lt0isl.jpg",
     descripcion: "Reloj elefante en vinilo",
     stock: 30,
+category: "relojes",
     precio: 3000,
   },
   {
@@ -46,6 +52,7 @@ export let products = [
     img: "https://res.cloudinary.com/dphzc4d5r/image/upload/v1696376523/relojcaballo_e2fe3f.png",
     descripcion: "Relojes de pared caballo con vinilos calados",
     stock: 6,
+category: "relojes",
     precio: 2500,
   },
   {
@@ -53,6 +60,7 @@ export let products = [
     img: "https://res.cloudinary.com/dphzc4d5r/image/upload/v1696376469/1680391995419_czrecm.jpg",
     descripcion: "Reloj de pared león",
     stock: 10,
+category: "relojes",
     precio: 3000,
   },
   {
@@ -60,6 +68,7 @@ export let products = [
     img: "https://res.cloudinary.com/dphzc4d5r/image/upload/v1696376442/cuadrohilo_zvbrgq.png",
     descripcion: "Cuadro tridimencional con hilo",
     stock: 8,
+    category: "decoracion",
     precio: 6000,
   },
 ];

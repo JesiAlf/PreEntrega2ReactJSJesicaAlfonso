@@ -21,7 +21,8 @@ const ItemDetailContainer=()=>{
             ...productSelected,
             quantity:cantidad,
         };
-        console.log("Se agregó al carrito",artes);
+        console.log("Se agregó al carrito",productSelected, artes)
+        console.log (cantidad)
     };
 
     return <ItemDetail productSelected={productSelected} onAdd={onAdd}/>;
