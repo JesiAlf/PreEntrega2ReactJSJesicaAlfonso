@@ -2,14 +2,21 @@ import { useEffect, useState } from "react";
 import { products } from "../productsMock";
 import { ItemDetail } from "./ItemDetail";
 import{useParams} from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import Swal from  "sweetalert2"
 
 const ItemDetailContainer=()=>{
     const [productSelected,setProductSelected]=useState({});
     const {id}=useParams()
 
-    useEffect(()=>{
+    const {addToCart, getQuantityById}=useContext(CartContext)
+let totalQuantity=getQuantityById(id)
+    
+
+useEffect(()=>{
         let producto=products.find((product)=>product.id=== +id);
-        const getProduct=new Promise((resolve, reject)=>{
+        const getProduct = new Promise((resolve)=>{
             resolve(producto );
         });
         getProduct
@@ -21,11 +28,20 @@ const ItemDetailContainer=()=>{
             ...productSelected,
             quantity:cantidad,
         };
-        console.log("Se agregó al carrito",productSelected, artes)
-        console.log (cantidad)
+        addToCart(artes)  
+
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Agregaste al carrito",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        
+        
     };
 
-    return <ItemDetail productSelected={productSelected} onAdd={onAdd}/>;
+    return <ItemDetail productSelected={productSelected} onAdd={onAdd} initial={totalQuantity}/>;
     
 
 };

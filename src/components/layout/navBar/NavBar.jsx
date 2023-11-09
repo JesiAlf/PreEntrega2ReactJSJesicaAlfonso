@@ -28,7 +28,6 @@ export const NavBar = () => {
         <CartWidget />
 
       </div>
-      <Outlet/>
   
     </>
      );

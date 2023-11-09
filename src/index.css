@@ -36,24 +36,6 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -80,17 +62,31 @@ body {
 }
 
 header{
-text-decoration: none;
+text-decoration:overline;
 }
 h1{
   text-decoration: none;
-  color: rgb(145, 43, 6);
+  color: rgb(236, 82, 26);
   font-family:Arial, Helvetica, sans-serif;
   text-align: center;
 
 }
+h2{
+  color: rgb(236, 173, 131);
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+h4 {
+  color:rgb(243, 150, 63);
+}
 
+h5{
+  color: coral;
+}
 
+cart{
+  color: beige;
+}
 aside{
   width: 60vh ;
   padding: 2rem;
@@ -120,3 +116,6 @@ section{
 
 
 }
+ .NavBar{
+  background-color: rgb(73, 42, 68);
+ }
